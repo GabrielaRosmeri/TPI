@@ -184,7 +184,6 @@
             <div class="row row justify-content-center">
               <div class="form-group">
                 <label>Hasta</label>
-
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
@@ -314,7 +313,6 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label>Fecha</label>
-
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
@@ -347,8 +345,12 @@
                 </div>  
               </div>
             <div class="modal-footer justify-content-center">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Registrar</button>
+              <div class="form-group">
+                <button type="button" class="btn btn-defauld" data-toggle="modal" data-target="#modal-ingreso-cancelar">Cancelar</button> 
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary" class="btn btn-defauld" data-toggle="modal" data-target="#modal-ingreso-registrar">Registrar</button> 
+                </div>
             </div>
           </div>
           <!-- /.modal-content -->
@@ -356,6 +358,44 @@
         <!-- /.modal-dialog -->
       </div>
     </section>
+
+    <div class="modal fade" id="modal-ingreso-cancelar">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">¿Seguro que quiere salir?</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Aceptar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="modal-ingreso-registrar">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">¿Seguro que quiere guardar los cambios?</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Aceptar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
